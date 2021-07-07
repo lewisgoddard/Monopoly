@@ -1,7 +1,7 @@
 # Monopoly
 Configuration items for full Microsoft integration with online services from a hybrid domain systems.
 
-- Edge
+- [Edge](Edge)
 - OneDrive
 - Sharepoint
 - Office
