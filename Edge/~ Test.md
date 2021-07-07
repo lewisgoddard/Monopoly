@@ -1,4 +1,4 @@
-### Test Configuration
+### Test Configuration of Microsoft Edge
 
 1. Run `gpupdate /force`
 2. `edge://policy`
