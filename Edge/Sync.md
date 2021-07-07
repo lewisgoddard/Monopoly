@@ -1,3 +1,5 @@
+# Configure Sync Settings in Microsoft Edge
+
 ### Automatic Sign-in
 
 If your device is hybrid-domain-joined, the user gets automatically signed in with their Azure AD account.
