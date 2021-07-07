@@ -1,6 +1,27 @@
 ### Automatic Sign-in
-Depending on how a device is configured, users can get auto signed into Microsoft Edge using one of the following approaches.
 
-- **The device is hybrid/AAD-J**: Available on Win10, down-level Windows, and corresponding server versions. The user gets automatically signed in with their Azure AD account.
-- **The device is domain joined**: Available on Win10, down-level Windows, and corresponding server versions. By default, the user will not get automatically signed in. If you want to automatically sign in users with domain accounts, use the ConfigureOnPremisesAccountAutoSignIn policy. If you want to automatically sign in users with their Azure AD accounts, consider hybrid joining your devices.
-- **OS default account is MSA**: Win10 RS3 (Version 1709/Build 10.0.16299) and above. This scenario is unlikely on enterprise devices. But, if the OS default account is MSA, Microsoft Edge will sign in automatically with the MSA account.
+If your device is hybrid-domain-joined, the user gets automatically signed in with their Azure AD account.
+
+_No configuration is necessary._ [[1](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-security-identity#automatic-sign-in)]
+
+You can use the `BrowserSignin` policy [[2](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#browsersignin)] to force users to sign in before use,  
+but this seems likely to cause friction so we do not advise it.
+
+### Auto-Configure Sync
+
+Forces data synchronization in Microsoft Edge, bypassing consent prompt.  
+This policy also prevents the user from turning sync off.
+
+0 = Do not automatically start sync and show the sync consent (default)  
+1 = Force sync to be turned on for Azure AD/Azure AD-Degraded user profile and do not show the sync consent prompt
+
+- GP unique name: **ForceSync**
+- GP name: Force synchronization of browser data and do not show the sync consent prompt
+- GP path (Mandatory): **Administrative Templates/Microsoft Edge/**
+- GP path (Recommended): N/A
+- GP ADMX file name: `MSEdge.admx`
+
+#### References
+- https://docs.microsoft.com/en-us/deployedge/microsoft-edge-security-identity#automatic-sign-in
+- https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#browsersignin
+- https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#forcesync
