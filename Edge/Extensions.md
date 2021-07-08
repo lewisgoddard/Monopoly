@@ -1,4 +1,4 @@
-# Configure Microsoft Edge Extension Settings
+## Configure Microsoft Edge Extension Settings
 
 ### Block External Extensions
 
@@ -37,8 +37,8 @@ _Note: This policy doesn't apply to InPrivate mode._
 - GP path (Mandatory): **Administrative Templates/Microsoft Edge/Extensions**
 - GP path (Recommended): N/A
 - GP ADMX file name: `MSEdge.admx`
-- 
-#### References
+
+### References
 - https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#blockexternalextensions
 - https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#extensioninstallblocklist\
 - https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#extensioninstallforcelist
