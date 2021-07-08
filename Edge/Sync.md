@@ -1,4 +1,4 @@
-# Configure Sync Settings in Microsoft Edge
+## Configure Sync Settings in Microsoft Edge
 
 ### Automatic Sign-in
 
@@ -62,7 +62,7 @@ Settings the policy as mandatory results in the policy error message: "This poli
 - GP path (Recommended): **Administrative Templates/Microsoft Edge - Default Settings (users can override)/Password manager and protection**
 - GP ADMX file name: `MSEdge.admx`
 
-#### References
+### References
 - https://docs.microsoft.com/en-us/deployedge/microsoft-edge-security-identity#automatic-sign-in
 - https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#browsersignin
 - https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#forcesync
