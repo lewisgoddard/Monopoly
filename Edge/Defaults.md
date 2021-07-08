@@ -1,4 +1,4 @@
-# Configure Microsoft Edge Default Settings
+## Configure Microsoft Edge Default Settings
 
 ### Homepage
 - GP unique name: **HomepageLocation**
@@ -28,7 +28,7 @@
 - GP path (Recommended): N/A
 - GP ADMX file name: `MSEdge.admx`
 
-#### References
+### References
 - https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#homepagelocation
 - https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#showhomebutton
 - https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#managedfavorites
