@@ -40,5 +40,5 @@ _Note: This policy doesn't apply to InPrivate mode._
 
 ### References
 - https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#blockexternalextensions
-- https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#extensioninstallblocklist\
+- https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#extensioninstallblocklist
 - https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#extensioninstallforcelist
