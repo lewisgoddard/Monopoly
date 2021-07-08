@@ -1,5 +1,8 @@
 # Monopoly
+
 Configuration items for full Microsoft integration with online services from a hybrid domain systems.
+
+## Supported Products
 
 - [Edge](Edge)
 - OneDrive
@@ -8,7 +11,10 @@ Configuration items for full Microsoft integration with online services from a h
 - Teams
 - Defender
 
+## Assumptions
+
 ### OU Structure
+
 - Employees
     - Accounts
     - Sales
