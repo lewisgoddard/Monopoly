@@ -100,6 +100,34 @@ If you don't configure this setting, users can choose whether to use potentially
 - GP path (Recommended): **Administrative Templates/Microsoft Edge - Default Settings (users can override)/SmartScreen settings**
 - GP ADMX file name: `MSEdge.admx`
 
+### Miscellaneous
+
+#### Enable site isolation for every site
+
+The 'SitePerProcess' policy can be used to prevent users from opting out of the default behavior of isolating all sites. Note that you can also use the IsolateOrigins policy to isolate additional, finer-grained origins.
+
+If you enable this policy, users can't opt out of the default behavior where each site runs in its own process.
+
+If you disable or don't configure this policy, a user can opt out of site isolation.
+
+- GP unique name: **[SitePerProcess](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#siteperprocess)**
+- GP name: Enable site isolation for every site
+- GP path (Mandatory): **Administrative Templates/Microsoft Edge/**
+- GP path (Recommended): N/A
+- GP ADMX file name: `MSEdge.admx`
+
+#### Allow user-level native messaging hosts (installed without admin permissions)
+
+If you set this policy to Enabled or leave it unset, Microsoft Edge can use native messaging hosts installed at the user level.
+
+If you set this policy to Disabled, Microsoft Edge can only use these hosts if they're installed at the system level.
+
+- GP unique name: **[NativeMessagingUserLevelHosts](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#nativemessaginguserlevelhosts)**
+- GP name: Allow user-level native messaging hosts (installed without admin permissions)
+- GP path (Mandatory): **Administrative Templates/Microsoft Edge/Native Messaging**
+- GP path (Recommended): N/A
+- GP ADMX file name: `MSEdge.admx`
+
 ### See also
 - [Microsoft Edge Security Baseline](BASELINE.md)
 - [Microsoft Security Compliance Toolkit](https://www.microsoft.com/en-us/download/details.aspx?id=55319)
