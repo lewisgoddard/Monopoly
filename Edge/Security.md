@@ -1,10 +1,12 @@
 ## Configure Microsoft Edge Security Settings
 
-### Configure Automatic HTTPS
+### Transport Security
+
+#### Configure Automatic HTTPS
 
 This feature helps protect against man-in-the-middle attacks by enforcing more secure connections, but users might experience more connection errors.
 
-#### Policy options mapping:
+##### Policy options mapping:
 
 DisableAutomaticHttps (0) = Automatic HTTPS functionality is disabled.
 
@@ -22,7 +24,23 @@ Use the preceding information when configuring this policy.
 - GP path (Recommended): **Administrative Templates/Microsoft Edge - Default Settings (users can override)/**
 - GP ADMX file name: `MSEdge.admx`
 
+#### Allow users to proceed from the HTTPS warning page
+
+Microsoft Edge shows a warning page when users visit sites that have SSL errors.
+
+If you enable or don't configure (default) this policy, users can click through these warning pages.
+
+If you disable this policy, users are blocked from clicking through any warning page.
+
+- GP unique name: **[SSLErrorOverrideAllowed](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#sslerroroverrideallowed)**
+- GP name: Allow users to proceed from the HTTPS warning page
+- - GP path (Mandatory): **Administrative Templates/Microsoft Edge/**
+- GP path (Recommended): N/A
+- GP ADMX file name: `MSEdge.admx`
+
 ### Configure Microsoft Defender SmartScreen
+
+#### Enable Microsoft Defender SmartScreen
 
 This policy setting lets you configure whether to turn on Microsoft Defender SmartScreen. Microsoft Defender SmartScreen provides warning messages to help protect your users from potential phishing scams and malicious software. _By default, Microsoft Defender SmartScreen is turned on._
 
@@ -38,7 +56,7 @@ _If you don't configure this setting, users can choose whether to use Microsoft 
 - GP path (Recommended): **Administrative Templates/Microsoft Edge - Default Settings (users can override)/SmartScreen settings**
 - GP ADMX file name: `MSEdge.admx`
 
-### Prevent bypassing Microsoft Defender SmartScreen prompts for sites
+#### Prevent bypassing Microsoft Defender SmartScreen prompts for sites
 
 This policy setting lets you decide whether users can override the Microsoft Defender SmartScreen warnings about potentially malicious websites.
 
@@ -52,7 +70,7 @@ If you disable or don't configure this setting, users can ignore Microsoft Defen
 - GP path (Recommended): N/A
 - GP ADMX file name: `MSEdge.admx`
 
-### Prevent bypassing Microsoft Defender SmartScreen warnings about downloads
+#### Prevent bypassing Microsoft Defender SmartScreen warnings about downloads
 
 This policy lets you determine whether users can override Microsoft Defender SmartScreen warnings about unverified downloads.
 
@@ -66,7 +84,7 @@ If you disable or don't configure this policy, users can ignore Microsoft Defend
 - GP path (Recommended): N/A
 - GP ADMX file name: `MSEdge.admx`
 
-### Configure Microsoft Defender SmartScreen to block potentially unwanted apps
+#### Configure Microsoft Defender SmartScreen to block potentially unwanted apps
 
 This policy setting lets you configure whether to turn on blocking for potentially unwanted apps with Microsoft Defender SmartScreen. Potentially unwanted app blocking with Microsoft Defender SmartScreen provides warning messages to help protect users from adware, coin miners, bundleware, and other low-reputation apps that are hosted by websites. Potentially unwanted app blocking with Microsoft Defender SmartScreen is turned off by default.
 
@@ -83,6 +101,7 @@ If you don't configure this setting, users can choose whether to use potentially
 - GP ADMX file name: `MSEdge.admx`
 
 ### See also
+- [Microsoft Edge Security Baseline](BASELINE.md)
 - [Microsoft Security Compliance Toolkit](https://www.microsoft.com/en-us/download/details.aspx?id=55319)
 
 ### References
