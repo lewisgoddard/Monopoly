@@ -12,3 +12,4 @@ If you enable this setting, users who are signed in on a PC that's joined to Azu
 
 ### References
 - https://docs.microsoft.com/en-us/onedrive/use-group-policy#silently-sign-in-users-to-the-onedrive-sync-app-with-their-windows-credentials
+- https://docs.microsoft.com/en-us/onedrive/use-silent-account-configuration
