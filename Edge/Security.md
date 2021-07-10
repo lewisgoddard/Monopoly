@@ -38,7 +38,7 @@ If you disable this policy, users are blocked from clicking through any warning 
 - GP path (Recommended): N/A
 - GP ADMX file name: `MSEdge.admx`
 
-### Configure Microsoft Defender SmartScreen
+### Microsoft Defender SmartScreen
 
 #### Enable Microsoft Defender SmartScreen
 
@@ -98,6 +98,38 @@ If you don't configure this setting, users can choose whether to use potentially
 - GP name: Configure Microsoft Defender SmartScreen to block potentially unwanted apps
 - GP path (Mandatory): **Administrative Templates/Microsoft Edge/SmartScreen settings**
 - GP path (Recommended): **Administrative Templates/Microsoft Edge - Default Settings (users can override)/SmartScreen settings**
+- GP ADMX file name: `MSEdge.admx`
+
+### Authentication
+
+#### Supported authentication schemes
+
+Specifies which HTTP authentication schemes are supported.
+
+You can configure the policy by using these values: 'basic', 'digest', 'ntlm', and 'negotiate'. Separate multiple values with commas.
+
+If you don't configure this policy, all four schemes are used.
+
+_Note: Microsoft recommend that only 'ntlm' and 'negotiate' are allowed._
+
+- GP unique name: **[AuthSchemes](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#authschemes)**
+- GP name: Supported authentication schemes
+- GP path (Mandatory): **Administrative Templates/Microsoft Edge/HTTP authentication**
+- GP path (Recommended): N/A
+- GP ADMX file name: `MSEdge.admx`
+
+#### Allow Basic authentication for HTTP
+
+If you enable this policy or leave it unset, Basic authentication challenges received over non-secure HTTP will be allowed.
+
+If you disable this policy, non-secure HTTP requests from the Basic authentication scheme are blocked, and only secure HTTPS is allowed.
+
+_Note: This policy setting is ignored (and Basic is always forbidden) if the AuthSchemes policy is set and does not include Basic._
+
+- GP unique name: **[BasicAuthOverHttpEnabled](https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#basicauthoverhttpenabled)**
+- GP name: Allow Basic authentication for HTTP
+- GP path (Mandatory): **Administrative Templates/Microsoft Edge/Native Messaging**
+- GP path (Recommended): N/A
 - GP ADMX file name: `MSEdge.admx`
 
 ### Miscellaneous
