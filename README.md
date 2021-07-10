@@ -7,7 +7,7 @@ Configuration items for full Microsoft integration with online services from a h
 - Microsoft Defender
 - [Microsoft Edge](Edge)
 - Microsoft Office
-- Microsoft OneDrive
+- [Microsoft OneDrive](OneDrive)
 - Microsoft Sharepoint
 - Microsoft Teams
 - Microsoft Windows
