@@ -11,6 +11,11 @@ Configuration items for full Microsoft integration with online services from a h
 - Teams
 - Defender
 
+## ADMX Sources
+
+Edge: https://www.microsoft.com/en-us/edge/business/download  
+Windows 10 (and 8.1): https://docs.microsoft.com/en-us/troubleshoot/windows-client/group-policy/create-and-manage-central-store
+
 ## Assumptions
 
 ### OU Structure
