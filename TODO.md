@@ -9,3 +9,6 @@ https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#newtabpagese
 
 ### OneDrive - Block moving to local
 https://docs.microsoft.com/en-us/onedrive/use-group-policy#prevent-users-from-redirecting-their-windows-known-folders-to-their-pc
+
+### Storage Sense
+https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-storage
