@@ -14,14 +14,17 @@ If you enable this setting, users who are signed in on a PC that's joined to Azu
 
 _Note: Microsoft recommend deploying the silent policy for existing devices and new devices while limiting the deployment of existing devices to 1,000 devices a day and not exceeding 4,000 devices a week. Microsoft also recommend using this setting together with "Prompt users to move Windows known folders to OneDrive." If moving the known folders silently does not succeed, users will be prompted to correct the error and continue._
 
-- **Computer Configuration\Policies\Administrative Templates\OneDrive\KFMSilentOptIn** to Tennant ID like 1111-2222-3333-4444
-- **Computer Configuration\Policies\Administrative Templates\OneDrive\KFMSilentOptInWithNotification** to 1 to show a notification.
+#### Options
 
-If you don't set any of the following policies then the default policy will move all the folders (Desktop, Documents and Pictures) into OneDrive. If you want to specify which folder(s) to move then you can set any combination of the following policies:
+**Computer Configuration\Policies\Administrative Templates\OneDrive**
+- Tennant ID like 1111-2222-3333-4444
+- Show Notification: 0. No, 1. Yes
 
-- **Computer Configuration\Policies\Administrative Templates\OneDrive\KFMSilentOptInDesktop**
-- **Computer Configuration\Policies\Administrative Templates\OneDrive\KFMSilentOptInDocuments**
-- **Computer Configuration\Policies\Administrative Templates\OneDrive\KFMSilentOptInPictures**
+If you don't set any of the following policies then the default policy will move all the folders (Desktop, Documents and Pictures) into OneDrive. If you want to specify which folder(s) to move then you can set any combination of the following options on this policy:
+
+- KFMSilentOptInDesktop
+- KFMSilentOptInDocuments
+- KFMSilentOptInPictures
 
 ### [Prompt users to move Windows known folders to OneDrive](https://docs.microsoft.com/en-us/onedrive/use-group-policy#prompt-users-to-move-windows-known-folders-to-onedrive)
 
