@@ -1,6 +1,6 @@
 # Monopoly
 
-Configuration items for full Microsoft integration with online services from a hybrid domain systems.
+Configuration items for full Microsoft integration with online services from a hybrid domain system.
 
 ## Supported Products
 
