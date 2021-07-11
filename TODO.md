@@ -6,3 +6,6 @@ Look more unecessarily difficult than complicated, considering the user can just
 https://techcommunity.microsoft.com/t5/enterprise/setting-google-as-default-search-provider-group-policy/m-p/1477201
 https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#default-search-provider
 https://docs.microsoft.com/en-us/deployedge/microsoft-edge-policies#newtabpagesearchbox
+
+### OneDrive - Block moving to local
+https://docs.microsoft.com/en-us/onedrive/use-group-policy#prevent-users-from-redirecting-their-windows-known-folders-to-their-pc
