@@ -10,6 +10,26 @@ If you enable this setting, users who are signed in on a PC that's joined to Azu
 - GP path (Recommended): N/A
 - GP ADMX file name: `OneDrive.admx`
 
+### [Silently move Windows known folders to OneDrive](https://docs.microsoft.com/en-us/onedrive/use-group-policy#silently-move-windows-known-folders-to-onedrive)
+
+_Note: Microsoft recommend deploying the silent policy for existing devices and new devices while limiting the deployment of existing devices to 1,000 devices a day and not exceeding 4,000 devices a week. Microsoft also recommend using this setting together with "Prompt users to move Windows known folders to OneDrive." If moving the known folders silently does not succeed, users will be prompted to correct the error and continue._
+
+- **Computer Configuration\Policies\Administrative Templates\OneDrive\KFMSilentOptIn** to Tennant ID like 1111-2222-3333-4444
+- **Computer Configuration\Policies\Administrative Templates\OneDrive\KFMSilentOptInWithNotification** to 1 to show a notification.
+
+If you don't set any of the following policies then the default policy will move all the folders (Desktop, Documents and Pictures) into OneDrive. If you want to specify which folder(s) to move then you can set any combination of the following policies:
+
+- **Computer Configuration\Policies\Administrative Templates\OneDrive\KFMSilentOptInDesktop**
+- **Computer Configuration\Policies\Administrative Templates\OneDrive\KFMSilentOptInDocuments**
+- **Computer Configuration\Policies\Administrative Templates\OneDrive\KFMSilentOptInPictures**
+
+### Prompt users to move Windows known folders to OneDrive
+
+_Note: Microsoft recommend deploying the prompt policy for existing devices only, and limiting the deployment to 5,000 devices a day and not exceeding 20,000 devices a week._
+
 ### References
 - https://docs.microsoft.com/en-us/onedrive/use-group-policy#silently-sign-in-users-to-the-onedrive-sync-app-with-their-windows-credentials
 - https://docs.microsoft.com/en-us/onedrive/use-silent-account-configuration
+- https://docs.microsoft.com/en-us/onedrive/redirect-known-folders
+- https://docs.microsoft.com/en-us/onedrive/use-group-policy#silently-move-windows-known-folders-to-onedrive
+- https://docs.microsoft.com/en-us/onedrive/use-group-policy#prompt-users-to-move-windows-known-folders-to-onedrive
