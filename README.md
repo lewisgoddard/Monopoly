@@ -18,7 +18,7 @@ _Note: Microsoft Defender Smartscreen has some configuration items within Micros
 
 Edge: https://www.microsoft.com/en-us/edge/business/download  
 Internet Explorer: Bundled with Windows 10  
-Windows 10 (and 8.1): https://docs.microsoft.com/en-us/troubleshoot/windows-client/group-policy/create-and-manage-central-store  
+Windows 11 / 10 (and 8.1): https://docs.microsoft.com/en-us/troubleshoot/windows-client/group-policy/create-and-manage-central-store  
 
 ## Assumptions
 
